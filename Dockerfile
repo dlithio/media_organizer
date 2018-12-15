@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 USER root
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends curl mediainfo imagemagick && \
+    apt-get install -y --no-install-recommends ca-certificates curl mediainfo imagemagick && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
